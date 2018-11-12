@@ -1,0 +1,48 @@
+------------------------------------------------------------------------------------------- 1. Animaciones ------------------------------------------------------------------------------------------
+
+*Player*
+
+   Nuevo GameObject vacio, Arrastrar Idle(Doing nothing), golpe recibido y dar golpe. Guardarlas en /animations/animation.
+   Creara un animation controller que permite manejar que animacion se esta ejecutando. Arrastrar a /animations/AnimationController.
+
+   Se ralentiza el PlayerIdle en animation controller, speed=0.5.
+
+   Se aplicara un tag al jugador (´player´), layer (´BlockingLayer´ ->Check collisions), sorting layer (´units´ -> Floor for background,items in front of floor and units for player/enemy)
+
+   Añadir Box collider 2D (Poner objeto en rectangulo para colisiones) -> Ajustar tamaño algo menor para que no colisione en espacios ajustados con otro collider
+   Añadir RigidBody 2D (Coloca un objeto bajo el control del motor fisico) -> BodyType: Kinematic (Registra colisiones pero no estan controlados por la fisica del sistema, solo por el script.)
+
+   Arrastrar a Prefab para guardar player y borrar si se quisiera del area de trabajo.
+
+*Enemy 1*
+
+   Nuevo GameObject vacio con Idle y ataque. /animations/animation.
+   
+   Al igual que el jugador, se añade Box Collider 2D y RigidBody 2D con la misma configuracion pero con tag 'enemy'.
+   Guardar en Prefabs.
+
+*Enemy 2*
+
+   En vez de borrar Enemy 1 vamos a modificarlo para Enemy2. Lo renombramos y arrastramos el Idle y ataque.
+
+   Se crea un nuevo Controller de Enemy1, lo movemos a /AnimationController.
+
+   Al abir el controller vemos las animaciones de Enemy 1 y Enemy 2. Borramos las del 2.
+
+   Como Enemy 1 y Enemy 2 comparten los mismos estados de idle y attack,se crea un animator override controller de manera que se usara el mismo State Machine y Script para controlarlo
+   pero con diferentes animaciones. Se llamara Enemy 2.
+   Controller->Enemy 1. Que es su mismo controller. Añadir en Enemy1Idle el Idle del 2, al igual que en attack.
+   En Enemy2 ahora cambiar en Animator Controller->Enemy2.
+
+   Guardar en Prefabs.
+
+
+
+------------------------------------------------------------------------------------------- 2. Tile Prefabs -----------------------------------------------------------------------------------------
+
+
+
+
+
+    
+   
