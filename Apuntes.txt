@@ -1,5 +1,8 @@
 ------------------------------------------------------------------------------------------- 1. Animaciones ------------------------------------------------------------------------------------------
+Kit 2d
 https://forum.unity.com/threads/2d-game-kit-official-thread.517249/
+Inteligencia enemigos
+https://medium.com/@jimmy0x52/making-smarter-monsters-adding-pathfinding-to-unitys-2d-roguelike-tutorial-5c004207a7a3
 
 *Player*
 
