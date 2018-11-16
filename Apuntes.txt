@@ -5,6 +5,8 @@ Inteligencia enemigos
 https://medium.com/@jimmy0x52/making-smarter-monsters-adding-pathfinding-to-unitys-2d-roguelike-tutorial-5c004207a7a3
 D&D basics
 https://forum.unity.com/threads/d-d-script.355010/
+Dados
+https://forum.unity.com/threads/c-dice-rolling-script.319917/
 
 *Player*
 
